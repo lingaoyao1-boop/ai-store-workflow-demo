@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: ai-store-workflow-demo
+    runtime: python
+    buildCommand: echo No build required
+    startCommand: python server.py
+    envVars:
+      - key: HOST
+        value: 0.0.0.0
